@@ -1,0 +1,11 @@
+.tab_firstline{background:url(images/tbg.gif); line-height:26px; border-left: solid 1px #c7c7c7;border-top: solid 1px #c7c7c7;border-bottom: solid 1px #c7c7c7; text-align:center; font-weight:bolder; font-size:12px; color:#15428b; cursor:hand;}
+.tab_firstline_last{background:url(images/tbg.gif); line-height:26px; border :solid 1px #c7c7c7;text-align:center; font-weight:bolder;font-size:12px; color:#15428b;cursor:hand;}
+.td1{border-left: solid 1px #c7c7c7; text-align:left; font-size:12px;color:#15428b;}
+.td2{border-right: solid 1px #c7c7c7;border-left: solid 1px #c7c7c7;text-align:left;font-size:12px;color:#15428b; line-height:25px;}
+.td3{border-left: solid 1px #c7c7c7; background:#efefef;text-align:left;font-size:12px;color:#15428b; line-height:25px;}
+.td4{border-right: solid 1px #c7c7c7;border-left: solid 1px #c7c7c7;background:#efefef;text-align:left;font-size:12px;color:#15428b; line-height:25px;}
+.tab_lastline{border-left: solid 1px #c7c7c7; border-bottom:solid 1px #c7c7c7;text-align:center; line-height:25px;}
+.tab_lastline_last{border-left: solid 1px #c7c7c7; border-right:solid 1px #c7c7c7; border-bottom:solid 1px #c7c7c7;text-align:center}
+.tab_inf{line-height:35px; padding-left:15px; padding-right:15px;}
+a.v1 {width:40px; line-height:18px; background:url(images/inputbg.gif); border:solid 1px #cdd2d6; font-size:9pt; display:block; float:left; text-align:center; color:#000; text-decoration:none; margin-left:5px;}
+input{width:30px; height:20px;  border:solid 1px #ccc; text-align:left;}

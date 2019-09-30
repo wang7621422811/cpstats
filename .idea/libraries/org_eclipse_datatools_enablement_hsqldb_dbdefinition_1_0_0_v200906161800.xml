@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.0.0.v200906161800">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.0.0.v200906161800.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition_1.0.4.v201005211215.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.informix.dbdefinition_1.0.4.v201005211230.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition_1.0.0.v201004211630.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.mysql.dbdefinition_1.0.4.v200906161800.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.oracle.dbdefinition_1.0.102.v201101120745.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.postgresql.dbdefinition_1.0.1.v200906161800.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

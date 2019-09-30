@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.0.2.v200906161815">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.0.2.v200906161815.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
