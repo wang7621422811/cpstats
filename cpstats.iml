@@ -11,6 +11,30 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="deleteUnindexed" value="false" />
+        <option name="httpAuthEnabled" value="false" />
+        <option name="httpPassword" />
+        <option name="httpUsername" />
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="com.zeroturnaround.jrebel.remoting.DeleteUnindexedFiles" value="false" />
+            <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerPreviousEnabledSelection" value="instance" />
+            <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerSelection" value="instance" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="lastExternalPluginCheckTime" value="1584363292025" />
+          </map>
+        </option>
+        <option name="masterModuleName" />
+        <option name="overrideStandardXmlFolder" value="false" />
+        <option name="remotingEnabled" value="false" />
+        <option name="secure" value="true" />
+        <option name="url" />
+        <option name="xmlDir" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -26,5 +50,8 @@
     <orderEntry type="library" name="org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.0.0.v200906161800" level="project" />
     <orderEntry type="library" name="org.eclipse.emf_2.6.0.v20110530-1010" level="project" />
     <orderEntry type="library" name="commons-pool-1.6" level="project" />
+    <orderEntry type="library" name="druid-1.1.10" level="project" />
+    <orderEntry type="library" name="spring-beans-4.3.12.RELEASE" level="project" />
+    <orderEntry type="library" name="hamcrest-core-1.3" level="project" />
   </component>
 </module>

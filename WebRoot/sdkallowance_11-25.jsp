@@ -9,7 +9,7 @@
 <%@ page import="java.util.List"%>
 <%@ include file="session.jsp"%>
 <%@ page import="com.sms.sms.Stat"%>
-<%@ page import="com.sms.sms.SdkResidue" %>
+<%@ page import="com.sms.sms.SdkResidue"%>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link href="css/main.css" type="text/css" rel="stylesheet" />
@@ -23,41 +23,41 @@
 }
 </style>
 <script type="text/javascript">
-/*
-window.onload = function(){
-    var tab = document.getElementById("tab");
-    var maxCol = 3, val, count, start;
-
-    for(var col = maxCol-1; col >= 0 ; col--){
-        count = 1;
-        val = "";
-        for(var i=0; i<tab.rows.length; i++){
-            if(val == tab.rows[i].cells[col].innerHTML){
-                count++;
-            }else{
-                if(count > 1){ //合并
-                    start = i - count;
-                    tab.rows[start].cells[col].rowSpan = count;
-                    for(var j=start+1; j<i; j++){
-                        tab.rows[j].cells[col].style.display = "none";
-                    }
-                    count = 1;
-                }
-                val = tab.rows[i].cells[col].innerHTML;
-            }
-        }
-        
-        if(count > 1 ){ //合并，最后几行相同的情况下
-            start = i - count;
-            tab.rows[start].cells[col].rowSpan = count;
-            for(var j=start+1; j<i; j++){
-                tab.rows[j].cells[col].style.display = "none";
-            }
-        }
-        
-    }
-};
-*/
+// /*
+// window.onload = function(){
+//     var tab = document.getElementById("tab");
+//     var maxCol = 3, val, count, start;
+//
+//     for(var col = maxCol-1; col >= 0 ; col--){
+//         count = 1;
+//         val = "";
+//         for(var i=0; i<tab.rows.length; i++){
+//             if(val == tab.rows[i].cells[col].innerHTML){
+//                 count++;
+//             }else{
+//                 if(count > 1){ //合并
+//                     start = i - count;
+//                     tab.rows[start].cells[col].rowSpan = count;
+//			for(var j=start+1; j<i; j++){
+//                         tab.rows[j].cells[col].style.display = "none";
+//                     }
+//                     count = 1;
+//                 }
+//                 val = tab.rows[i].cells[col].innerHTML;
+//             }
+//         }
+//
+//         if(count > 1 ){ //合并，最后几行相同的情况下
+//             start = i - count;
+//             tab.rows[start].cells[col].rowSpan = count;
+//             for(var j=start+1; j<i; j++){
+//                 tab.rows[j].cells[col].style.display = "none";
+//             }
+//         }
+//
+//     }
+// };
+// */
 </script>
 	</head>
 <%
@@ -157,18 +157,18 @@ List<String> list = null;
 									allow = 0; ||"河北".equals(str[0])
 								}
 								**/
-								if("安徽".equals(str[0])||"内蒙古".equals(str[0])||"吉林".equals(str[0])){
+								if("安徽".equals(str[0])||"内蒙古".equals(str[0])||"吉林".equals(str[0])||"云南".equals(str[0])){
 						%>
 						<tr>
-							<%--<%--%>
-							<%--if (str[0].equals("安徽")) {--%>
-							<%--%>--%>
-								<%--<td><%=str[0]%></td>--%>
-								<%--<td>-</td>--%>
-								<%--<td>-</td>--%>
-								<%--<td>-</td>--%>
+							<%
+							if (str[0].equals("云南")) {
+							%>
+								<td><%=str[0]%></td>
+								<td><%=str[1]%>%</td>
+								<td><%=str[1]%>%</td>
+								<td>-</td>
 						<%
-//							}else {
+							}else {
 						%>
 							<td><%=str[0]%></td>
 							<td><%=str[1]%>%</td>
@@ -176,7 +176,7 @@ List<String> list = null;
 							<td><%=str[1]%>%</td>
 						</tr>
 						<%
-//							}
+							}
 								}else{
 
 								
@@ -196,6 +196,14 @@ List<String> list = null;
 							<td>-</td>
 							<td>-</td>
 							<td>-</td>
+
+						<%
+						} else if (str[0].equals("湖北")){
+						%>
+							<td><%=str[0]%></td>
+							<td>--</td>
+							<td>--</td>
+							<td>--</td>
 						<%
 						} else if (str[0].equals("江苏")){
 						%>
@@ -204,12 +212,19 @@ List<String> list = null;
 						<td><%=str[2]%>%</td>
 						<td><%=str[3]%>%</td>
 						<%
-						} else if (str[0].equals("广东")){
+						} else if (str[0].equals("贵州")){
+						%>
+						<td><%=str[0]%></td>
+						<td><%=str[1]%>%</td>
+						<td>--</td>
+						<td><%=str[3]%>%</td>
+						<%
+						} else if (str[0].equals("广东")){//广东屏蔽
 						%>
 
 							<td><%=str[0]%></td>
 							<td>--</td>
-							<td><%=str[1]%>%</td>
+							<td>--</td>
 							<td>--</td>
 
 						<%}else {%>

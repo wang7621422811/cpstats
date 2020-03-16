@@ -82,7 +82,7 @@
 									</tr>
 									<tr>
 										<td height="25" style="border-bottom:1px dotted #004C7E; padding-left:40px;">
-									  	<span class="style1"><a href="sdkallowance.jsp" target="right">SDK余量查询</a></span>
+									  	<span class="style1"><a href="sdk_residue_new" target="right">SDK余量查询</a></span>
 									  </td>
 									</tr>
 									<% }else if(roleID == 1){ %>
