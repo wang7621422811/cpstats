@@ -55,7 +55,7 @@
     <table align=center class=table1 id="tab">
         <tr>
             <td>省份</td>
-            <td>1元&nbsp;|&nbsp;金币10</td>
+            <%--<td>1元&nbsp;|&nbsp;金币10</td>--%>
             <td>2元&nbsp;|&nbsp;金币80</td>
             <td>2元&nbsp;|&nbsp;金币200</td>
             <td>2元&nbsp;|&nbsp;运气金币</td>
@@ -67,7 +67,7 @@
                 <td><c:out value="${provinceLimit.province}"></c:out></td>
                 <!-- type==1==壳子限量 -->
                 <c:if test="${provinceLimit.type==1}">
-                    <td>${provinceLimit.one}%</td>
+                    <%--<td>${provinceLimit.one}%</td>--%>
                     <c:choose>
                         <c:when test="${provinceLimit.two == -1}">
                             <td> -- </td>
@@ -124,23 +124,6 @@
 
                 <!-- type==2==分资费限量 -->
                 <c:if test="${provinceLimit.type==2}">
-                    <%--2元 1--%>
-                    <c:choose>
-                        <c:when test="${provinceLimit.one == -1}">
-                            <td> -- </td>
-                        </c:when>
-                        <c:otherwise>
-                            <%--如果当前余量小于0则更新成0--%>
-                            <c:choose>
-                                <c:when test="${provinceLimit.one<=0}">
-                                    <td>0%</td>
-                                </c:when>
-                                <c:otherwise>
-                                    <td>${provinceLimit.one}%</td>
-                                </c:otherwise>
-                            </c:choose>
-                        </c:otherwise>
-                    </c:choose>
                     <%--2元 1--%>
                     <c:choose>
                         <c:when test="${provinceLimit.two == -1}">
@@ -231,7 +214,6 @@
             </tr>
         </c:forEach>
         <td>新疆</td>
-        <td>100%</td>
         <td>100%</td>
         <td>100%</td>
         <td>100%</td>
