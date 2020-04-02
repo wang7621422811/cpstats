@@ -81,7 +81,7 @@ public class SdkDao {
         endTime = endTime + " 23:59:59";
         String sqlQuery = "select a.province," +
                 "IFNULL(SUM(a.price=100 or null),0) as one," +
-                "IFNULL( SUM( a.price = 200 and left(cp_param,1) not in ('1') OR NULL ) * 2, 0 ) AS two," +
+                "IFNULL( SUM( a.price = 200  and billId = '14593062087043003' OR NULL ) * 2, 0 ) AS two," +
                 "IFNULL( SUM( a.price = 200 and left(cp_param,1)='1' OR NULL ) * 2, 0 ) AS twoO," +
                 "IFNULL( SUM( a.price = 200 and left(cp_param,1)='2' OR NULL ) * 2, 0 ) AS twoT," +
                 "IFNULL( SUM( a.price = 300 OR NULL ) * 3, 0 ) AS three," +
