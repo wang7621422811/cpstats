@@ -87,7 +87,7 @@ public class SdkService {
                         } else {
                             int percent = (setProvinceLimit.getpOne() - provinceNotShell.getOne()) * 100 / setProvinceLimit.getpOne();
                             if (percent <= 0) percent=0;
-                            count = dao.queryByMsgIsNotShell(100,provinceNotShell.getProvince());
+                            count = dao.queryByMsgIsNotShell(100,provinceNotShell.getProvince(),0);
                             if (count > 50) {
                                 provinceNotShell.setOne(0);
                             } else {
@@ -99,7 +99,7 @@ public class SdkService {
                         } else {
                             int percent = (setProvinceLimit.getpTwo() - provinceNotShell.getTwo()) * 100 / setProvinceLimit.getpTwo();
                             if (percent <= 0) percent=0;
-                            count = dao.queryByMsgIsNotShell(200,provinceNotShell.getProvince());
+                            count = dao.queryByMsgIsNotShell(200,provinceNotShell.getProvince(),0);
                             if (count > 50) {
                                 provinceNotShell.setTwo(0);
                             } else {
@@ -111,7 +111,7 @@ public class SdkService {
                         } else {
                             int percent = (setProvinceLimit.getpTwoO() - provinceNotShell.getTwoO()) * 100 / setProvinceLimit.getpTwoO();
                             if (percent <= 0) percent=0;
-                            count = dao.queryByMsgIsNotShell(200,provinceNotShell.getProvince());
+                            count = dao.queryByMsgIsNotShell(200,provinceNotShell.getProvince(),1);
                             if (count > 50) {
                                 provinceNotShell.setTwoO(0);
                             } else {
@@ -123,7 +123,7 @@ public class SdkService {
                         } else {
                             int percent = (setProvinceLimit.getpTwoT() - provinceNotShell.getTwoT()) * 100 / setProvinceLimit.getpTwoT();
                             if (percent <= 0) percent=0;
-                            count = dao.queryByMsgIsNotShell(200,provinceNotShell.getProvince());
+                            count = dao.queryByMsgIsNotShell(200,provinceNotShell.getProvince(),2);
                             if (count > 50) {
                                 provinceNotShell.setTwoT(0);
                             } else {
@@ -135,7 +135,7 @@ public class SdkService {
                         } else {
                             int percent = (setProvinceLimit.getpThree() - provinceNotShell.getThree()) * 100 / setProvinceLimit.getpThree();
                             if (percent <= 0) percent=0;
-                            count = dao.queryByMsgIsNotShell(300,provinceNotShell.getProvince());
+                            count = dao.queryByMsgIsNotShell(300,provinceNotShell.getProvince(),0);
                             if (count > 50) {
                                 provinceNotShell.setThree(0);
                             } else {
@@ -147,7 +147,7 @@ public class SdkService {
                         } else {
                             int percent = (setProvinceLimit.getpFive() - provinceNotShell.getFive()) * 100 / setProvinceLimit.getpFive();
                             if (percent <= 0) percent=0;
-                            count = dao.queryByMsgIsNotShell(300,provinceNotShell.getProvince());
+                            count = dao.queryByMsgIsNotShell(500,provinceNotShell.getProvince(),0);
                             if (count > 50) {
                                 provinceNotShell.setFive(0);
                             } else {

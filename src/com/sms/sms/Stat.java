@@ -105,11 +105,12 @@ public class Stat {
 	public String[][] getsdkstat(String username, String starttime,String endtime) throws Exception{
 		String sdktables = "sdksms";
 		Date currentTime = new Date();
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String times = formatter.format(currentTime).substring(0, 10);
-		if (!times.substring(5, 7).equals(starttime.substring(5, 7))) {
-			sdktables = "databack.sdksms18"
-					+ starttime.substring(5, 7);
+		SimpleDateFormat formatter = new SimpleDateFormat("yyMM");
+		String times = formatter.format(currentTime);
+		String beginTime1 = starttime.replace("-","");
+		if (!times.equals(beginTime1.substring(2,6))) {
+			sdktables = "databack.sdksms"
+					+ beginTime1.substring(2,6);
 		}
 		String sql = "select a.cp,a.cp_param,a.price/100 as fee,COUNT(a.cp_param) as users,SUM(a.price/100) as money from "+sdktables+" a,tb_cp_user c " +
 				"where c.cpName=a.cp and c.userName = '"+username+"' and isread = 1 and createtime>='"+starttime+" 00:00:00' and createtime<='"+endtime+" 23:59:59' " +

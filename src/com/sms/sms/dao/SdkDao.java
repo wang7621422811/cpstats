@@ -112,13 +112,13 @@ public class SdkDao {
         return count;
     }
 
-    public int queryByMsgIsNotShell(int price,String province) {
-        String sql = "SELECT count(1) FROM `sdksms` where msg in ('800039','800038') and price = ? and province = ? and left(createtime,10) = ?";
+    public int queryByMsgIsNotShell(int price,String province,int type) {
+        String sql = "SELECT count(1) FROM `sdksms` where msg in ('800039','800038') and price = ? and province = ? and left(createtime,10) = ? and left(cp_param,1) = ?";
         String nowDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
         Integer count = null;
         try {
-            count = jdbcTemplate.queryForObject(sql, Integer.class, price, province, nowDate);
+            count = jdbcTemplate.queryForObject(sql, Integer.class, price, province, nowDate,type);
         } catch (DataAccessException e) {
             count = 0;
         }

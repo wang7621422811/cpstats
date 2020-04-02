@@ -213,12 +213,23 @@
                 </c:if>
             </tr>
         </c:forEach>
-        <td>新疆</td>
-        <td>100%</td>
-        <td>100%</td>
-        <td>100%</td>
-        <td>100%</td>
-        <td>100%</td>
+        <tr>
+            <td>新疆</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+        </tr>
+        <tr>
+            <td>海南</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td>100%</td>
+            <td>--</td>
+        </tr>
+
     </table>
     <div align="center">
     </div>
